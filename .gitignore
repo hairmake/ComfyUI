@@ -372,6 +372,7 @@ __pycache__/
 /custom_nodes/was-node-suite-comfyui/*.latent
 /custom_nodes/was-node-suite-comfyui/*.image
 /custom_nodes/was-node-suite-comfyui/*.conditioning
+/custom_nodes/hairmake_nodes.ini
 
 extra_model_paths.yaml
 /.vs

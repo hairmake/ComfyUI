@@ -4,10 +4,22 @@ import torch
 import os
 import boto3
 
+from configparser import RawConfigParser
+
+if platform.system() == "Windows":
+    conf_path = "config_win.ini"
+else:
+    conf_path = "config.ini"
+
+CONF = RawConfigParser()
+CONF.read(conf_path)
+
+
+
 S3_CLIENT = boto3.client('s3',
-                         aws_access_key_id='',
-                         aws_secret_access_key='',
-                         region_name='us-east-2')
+                         aws_access_key_id=CONF.get('aws', 'aws_access_key_id'),
+                         aws_secret_access_key=CONF.get('aws', 'aws_secret_access_key'),
+                         region_name=CONF.get('aws', 'region'))
 
 
 def upload(s3_client, bucket_name, local_file, s3_path, is_public=True):
