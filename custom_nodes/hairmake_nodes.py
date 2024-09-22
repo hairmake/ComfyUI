@@ -7,7 +7,7 @@ import boto3
 from configparser import RawConfigParser
 
 CONF = RawConfigParser()
-CONF.read("./hairmake_nodes.ini")
+CONF.read("./custom_nodes/hairmake_nodes.ini")
 
 
 
