@@ -18,3 +18,5 @@ psutil
 kornia>=0.7.1
 spandrel
 soundfile
+onnxruntime-gpu==1.17.1
+bitsandbytes==0.43.3

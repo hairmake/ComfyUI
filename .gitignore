@@ -5,7 +5,6 @@ __pycache__/
 !/input/example.png
 /models/
 /temp/
-/custom_nodes/
 !custom_nodes/example_node.py.example/
 !custom_nodes/ComfyUI-Impact-Pack/disable.py
 !custom_nodes/ComfyUI-Impact-Pack/install.py
@@ -53,6 +52,7 @@ __pycache__/
 !custom_nodes/ComfyUI-segment-anything-2/
 !custom_nodes/comfyui_segment_anything/
 !custom_nodes/ComfyUI_Custom_Nodes_AlekPet/
+/custom_nodes/
 extra_model_paths.yaml
 /.vs
 .vscode/
