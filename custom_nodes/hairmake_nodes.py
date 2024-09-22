@@ -6,13 +6,8 @@ import boto3
 
 from configparser import RawConfigParser
 
-if platform.system() == "Windows":
-    conf_path = "config_win.ini"
-else:
-    conf_path = "config.ini"
-
 CONF = RawConfigParser()
-CONF.read(conf_path)
+CONF.read("hairmake_nodes.ini")
 
 
 
